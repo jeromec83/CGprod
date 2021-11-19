@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,400&display=swap");
+* {
+  font-family: "roboto", sans-serif;
+  color: black;
+  max-width: 2000px;
+}
+
+body {
+  background: linear-gradient(152deg, #2eaeec 0%, #0de7f0 36%, rgba(0, 224, 255, 0.709121) 100%);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+  font-weight: bolder;
+  font-size: large;
+  padding: 10px;
+  margin: 10px;
+}
+
+.menuli {
+  border-bottom: 5px solid transparent;
+}
+
+.menu li:hover {
+  border-bottom: blue;
+  color: white;
+  cursor: pointer;
+  border-bottom: 5px solid blue;
+}
+
+.sousmenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+  font-weight: bolder;
+  font-size: large;
+  text-align: center;
+  visibility: hidden;
+}
+
+.categories:hover .sousmenu {
+  visibility: visible;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content img {
+  display: block;
+  margin-top: -60px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  max-width: 99%;
+  height: auto;
+  -webkit-animation: animateimg 3s linear;
+          animation: animateimg 3s linear;
+}
+
+.content h1 {
+  color: #444444;
+  text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc, 1px 2px 1px #eeeeee, 3px 2px 1px #cccccc, 2px 3px 1px #eeeeee, 4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc, 4px 5px 1px #eeeeee, 6px 5px 1px #cccccc, 5px 6px 1px #eeeeee, 7px 6px 1px #cccccc;
+  color: black;
+  margin: 0px;
+  margin-top: -80px;
+}
+
+.content h1::first-letter {
+  font-size: 60px;
+}
+
+.content h2 {
+  font-size: 20px;
+  margin: 0px;
+}
+
+@-webkit-keyframes animateimg {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes animateimg {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.grandfooter {
+  margin-top: 20px;
+  border-top: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grandfooter img {
+  width: 10%;
+}
+
+.grandfooter .footer1 h3 {
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  font-size: large;
+  font-weight: bolder;
+}
+
+.grandfooter .footer1 h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.grandfooter .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.grandfooter .social h3 {
+  margin-bottom: 0px;
+}
+
+.grandfooter .social a {
+  font-size: xx-large;
+  padding-top: 10px;
+}
+
+.grandfooter .footer2 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.grandfooter .footer2 a {
+  padding-right: 50px;
+}
+
+.copy {
+  display: block;
+  font-size: small;
+  text-align: center;
+}
+/*# sourceMappingURL=index.css.map */
