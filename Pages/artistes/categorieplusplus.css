@@ -360,6 +360,7 @@ a {
 }
 
 .affiche {
+  margin: 20px;
   text-align: center;
 }
 
@@ -369,6 +370,10 @@ a {
 
 .affiche p {
   text-align: justify;
+}
+
+.affiche .gras {
+  font-weight: 600;
 }
 
 .grandfooter {
@@ -548,4 +553,4 @@ a {
     text-align: center;
   }
 }
-/*# sourceMappingURL=Categorieplusplus.css.map */
+/*# sourceMappingURL=categorieplusplus.css.map */
