@@ -8,9 +8,9 @@
 body {
   background: linear-gradient(
     152deg,
-    rgba(46, 174, 236, 1) 0%,
-    rgba(13, 231, 240, 1) 36%,
-    rgba(0, 224, 255, 0.7091211484593838) 100%
+    rgba(175, 217, 229, 1) 0%,
+    rgba(197, 226, 233, 1) 36%,
+    rgba(224, 237, 236, 1) 100%
   );
 }
 ul {
@@ -242,6 +242,11 @@ a {
 	display: block;
 }
 
+@media screen and (max-width: 1000px) {
+  .content h1{
+    margin-top: -40px;
+  }
+  }
 
 
 @media screen and (max-width: 991px) {
@@ -285,17 +290,19 @@ a {
     font-size: 60px;
   }
 }
-.affiche{
-  margin-top: 30px;
-  margin-bottom: 30px;
-  display: grid; 
-  grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 1fr 1fr; 
-  gap: 50px 1px;  
-  justify-items: center; 
-  
-}
-  
+.affiche {
+  margin : 20px;
+    text-align: center;
+    & img {
+  max-width: 100%;
+    }
+    & p {
+    text-align: justify;
+    }
+    & .gras{
+      font-weight:bolder;
+    }
+} 
 
 
   
@@ -305,6 +312,7 @@ a {
     border-top: 1px solid black;
     display: flex;
     flex-direction: column;
+    background-color: #DEE1DD;
     & .moyenfooter{
       display :flex;
       flex-direction: row;
@@ -351,19 +359,12 @@ a {
     font-size: small;
     text-align: center;
   }
-  @media screen and (max-width: 1000px) {
-  .content h1{
-    margin-top: -40px;
-  }
-  }
+ 
   @media screen and (max-width: 500px) {
     * {
       max-width: 500px;
-      max-height: 100vh;
     }
-    body {
-      height: 900px;
-    }
+  
     .content {
       & h1 {
         margin: 0px 50px 40px 50px;
@@ -383,7 +384,7 @@ a {
     }
   
     .grandfooter {
-      margin-top: 20px;
+      margin-top: 10px;
       border-top: 1px solid black;
       & .moyenfooter{
         display : flex;

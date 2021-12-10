@@ -8,9 +8,9 @@
 body {
   background: linear-gradient(
     152deg,
-    rgba(46, 174, 236, 1) 0%,
-    rgba(13, 231, 240, 1) 36%,
-    rgba(0, 224, 255, 0.7091211484593838) 100%
+    rgba(175, 217, 229, 1) 0%,
+    rgba(197, 226, 233, 1) 36%,
+    rgba(224, 237, 236, 1) 100%
   );
 }
 ul {
@@ -245,21 +245,7 @@ a {
 
 
 
-@media screen and (max-width: 991px) {
-  .menu-icon:checked + label,
-  .menu-icon:not(:checked) + label{
-    right: 35px;
-  }
-  .logo {
-    left: 20px;
-  }
-  .nav{
-    right: 20px;
-  }
-  .nav ul li a{
-    font-size: 4vh;
-  }
-}
+
 
 
 .content {
@@ -276,17 +262,21 @@ a {
   }
   & h1 {
     color: #444444;
-    text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc,
-      1px 2px 1px #eeeeee, 3px 2px 1px #cccccc, 2px 3px 1px #eeeeee,
-      4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc,
-      4px 5px 1px #eeeeee, 6px 5px 1px #cccccc, 5px 6px 1px #eeeeee,
-      7px 6px 1px #cccccc;
-    color: black;
     margin: 0px;
     margin-top: -80px;
+    
   }
   & h1::first-letter {
     font-size: 60px;
+  }
+  
+  & h3 {
+    font-weight: lighter;
+    font-size: 25px;
+    margin: 0px;
+  }
+  & h3::first-letter {
+    font-size: 40px;
   }
   & h2 {
     font-size: 18px;
@@ -312,6 +302,8 @@ a {
   border-top: 1px solid black;
   display: flex;
   flex-direction: column;
+  background-color: #DEE1DD;
+
   & .moyenfooter{
     display :flex;
     flex-direction: row;
@@ -320,6 +312,7 @@ a {
   }
 
   & img {
+    
     width: 10%;
   }
   & .footer1 h3 {
@@ -367,9 +360,10 @@ a {
   margin-top: -40px;
 }
 }
-@media screen and (max-width: 992px) {
+
+@media screen and (max-width: 991px) {
   * {
-    max-width: 992px;
+    max-width: 991px;
     max-height: 100vh;
   }
 .content h1{
@@ -379,7 +373,21 @@ a {
   margin-top: 140px;
 
 }
+  .menu-icon:checked + label,
+  .menu-icon:not(:checked) + label{
+    right: 35px;
+  }
+  .logo {
+    left: 20px;
+  }
+  .nav{
+    right: 20px;
+  }
+  .nav ul li a{
+    font-size: 4vh;
+  }
 }
+
 @media screen and (max-width: 768px) {
   * {
     max-width: 768px;

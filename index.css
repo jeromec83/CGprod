@@ -6,7 +6,7 @@
 }
 
 body {
-  background: linear-gradient(152deg, #2eaeec 0%, #0de7f0 36%, rgba(0, 224, 255, 0.709121) 100%);
+  background: linear-gradient(152deg, #afd9e5 0%, #c5e2e9 36%, #e0edec 100%);
 }
 
 ul {
@@ -311,22 +311,6 @@ a {
   display: block;
 }
 
-@media screen and (max-width: 991px) {
-  .menu-icon:checked + label,
-  .menu-icon:not(:checked) + label {
-    right: 35px;
-  }
-  .logo {
-    left: 20px;
-  }
-  .nav {
-    right: 20px;
-  }
-  .nav ul li a {
-    font-size: 4vh;
-  }
-}
-
 .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -352,14 +336,22 @@ a {
 
 .content h1 {
   color: #444444;
-  text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc, 1px 2px 1px #eeeeee, 3px 2px 1px #cccccc, 2px 3px 1px #eeeeee, 4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc, 4px 5px 1px #eeeeee, 6px 5px 1px #cccccc, 5px 6px 1px #eeeeee, 7px 6px 1px #cccccc;
-  color: black;
   margin: 0px;
   margin-top: -80px;
 }
 
 .content h1::first-letter {
   font-size: 60px;
+}
+
+.content h3 {
+  font-weight: lighter;
+  font-size: 25px;
+  margin: 0px;
+}
+
+.content h3::first-letter {
+  font-size: 40px;
 }
 
 .content h2 {
@@ -408,6 +400,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #DEE1DD;
 }
 
 .grandfooter .moyenfooter {
@@ -488,9 +481,9 @@ a {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   * {
-    max-width: 992px;
+    max-width: 991px;
     max-height: 100vh;
   }
   .content h1 {
@@ -498,6 +491,19 @@ a {
   }
   .grandfooter {
     margin-top: 140px;
+  }
+  .menu-icon:checked + label,
+  .menu-icon:not(:checked) + label {
+    right: 35px;
+  }
+  .logo {
+    left: 20px;
+  }
+  .nav {
+    right: 20px;
+  }
+  .nav ul li a {
+    font-size: 4vh;
   }
 }
 
