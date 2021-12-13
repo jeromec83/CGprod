@@ -311,6 +311,22 @@ a {
   display: block;
 }
 
+.articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.articles p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 30px;
+}
+
 @media screen and (max-width: 1000px) {
   .content h1 {
     margin-top: -40px;

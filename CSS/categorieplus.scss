@@ -295,7 +295,7 @@ a {
   justify-items: center; 
 }
 
-#affiche:hover {
+img:hover {
     cursor: pointer;
     transform: scale(1.02);
     box-shadow: 0px 0px 17px 0px rgba(147, 86, 220, 0.73);
@@ -310,6 +310,7 @@ a {
   grid-template-rows: 1fr 1fr; 
   gap: 50px 1px;  
   justify-items: center; 
+  
    
   & img{
     width: 90%;
