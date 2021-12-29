@@ -311,6 +311,10 @@ a {
   display: block;
 }
 
+h3 {
+  margin-bottom: -18px;
+}
+
 @media screen and (max-width: 991px) {
   .menu-icon:checked + label,
   .menu-icon:not(:checked) + label {
