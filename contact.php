@@ -34,7 +34,5 @@ if (!empty($_POST['name']) and !empty($_POST['email']) and !empty($_POST['artist
         $response = $mj->post(Resources::$Email, ['body' => $body]);
         $response->success() && var_dump($response->getData());
     }
-} else {
-    header('Location: index.php');
-    die();
-}
+} 
+?>
