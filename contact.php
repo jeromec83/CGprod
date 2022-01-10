@@ -19,12 +19,12 @@ if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['artiste'
             'Messages' => [
                 [
                     'From' => [
-                        'Email' => "jeromec83@icloud.com",
+                        'Email' => "jeromec83@live.fr",
                         'Name' => "CGPROD"
                     ],
                     'To' => [
                         [
-                            'Email' => "jeromec83@icloud.com",
+                            'Email' => "jeromec83@live.fr",
                             'Name' => "CGPROD"
                         ]
                     ],
@@ -37,9 +37,7 @@ if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['artiste'
         $response = $mj->post(Resources::$Email, ['body' => $body]);
         $response->success() && var_dump($response->getData());
     }
-    else{
-        echo "Email non valide";
-    }
+    
 
 } else {
     header('Location: index.php');
