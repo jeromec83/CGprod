@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
 
 * {
   font-family: "roboto", sans-serif;
@@ -174,28 +175,36 @@ a {
   transition: all 250ms linear;
 }
 .nav ul li:nth-child(1){
-  transition-delay: 200ms;
+  transition-delay: 250ms;
 }
 .nav ul li:nth-child(2){
-  transition-delay: 150ms;
+  transition-delay:200ms;
 }
 .nav ul li:nth-child(3){
-  transition-delay: 100ms;
+  transition-delay: 150ms;
 }
 .nav ul li:nth-child(4){
+  transition-delay: 100ms;
+}
+.nav ul li:nth-child(5){
   transition-delay: 50ms;
 }
 .nav ul li a{
   font-family: 'Montserrat', sans-serif;
-  font-size: 5vh;
-  text-transform: uppercase;
+  font-size: 45px;
+  font-variant-caps: small-caps;
   line-height: 1.2;
-  font-weight: 800;
+  font-weight: 500;
   display: inline-block;
   position: relative;
   color: #ececee;
   transition: all 250ms linear;
+  &.sousmenu {
+    font-size: 20px;
+    font-variant-caps: normal;
+  }
 }
+
 .nav ul li a:hover{
   text-decoration: none;
   color: #0b68e2;
@@ -226,7 +235,9 @@ a {
 .menu-icon:checked ~ .nav ul li:nth-child(4){
   transition-delay: 1640ms;
 }
-
+.menu-icon:checked ~ .nav ul li:nth-child(5){
+  transition-delay: 1720ms;
+}
 
 
 .logo {
@@ -261,30 +272,29 @@ a {
     animation: animateimg 3s linear;
   }
   & h1 {
-    color: #444444;
+    color: #000000;
     margin: 0px;
-    margin-top: -80px;
+    margin-top: -60px;
+    font-family: 'Open Sans', sans-serif;
+    font-variant-caps: small-caps;
+    font-weight: bolder;
     
   }
-  & h1::first-letter {
-    font-size: 60px;
-  }
-  
-  & h3 {
-    font-weight: lighter;
+  & h2 {
+    font-weight: 300;
     font-size: 25px;
     margin: 0px;
   }
-  & h3::first-letter {
-    font-size: 40px;
-  }
-  & h2 {
+  
+  & h3 {
     font-size: 18px;
     margin: 0px;
     text-align: center;
-    
-
+    font-weight: normal;
+    margin-top: 20px;
   }
+ 
+  
 }
 @keyframes animateimg {
   0% {
@@ -298,11 +308,11 @@ a {
   }
 }
 .grandfooter {
-  margin-top: 80px;
-  border-top: 1px solid black;
+  margin-top: 30px;
+  
   display: flex;
   flex-direction: column;
-  background-color: #DEE1DD;
+  background-color: #91989e42;
 
   & .moyenfooter{
     display :flex;
@@ -338,18 +348,11 @@ a {
     font-size: xx-large;
     padding-top: 10px;
   }
-  & .footer2 {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
- 
 }
-.copy {
-  display: block;
-  font-size: small;
-  text-align: center;
+.footer-copyright{
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
 }
 @media screen and (max-width: 1200px) {
   * {
