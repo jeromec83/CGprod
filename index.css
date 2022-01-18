@@ -348,12 +348,14 @@ a {
   height: auto;
   -webkit-animation: animateimg 3s linear;
           animation: animateimg 3s linear;
+  margin-top: -240px;
+  margin-right: 130px;
 }
 
 .content h1 {
   color: #000000;
   margin: 0px;
-  margin-top: -60px;
+  margin-top: -250px;
   font-family: 'Open Sans', sans-serif;
   font-variant-caps: small-caps;
   font-weight: bolder;
