@@ -399,9 +399,28 @@ a {
   margin: 20px;
 }
 
+.routes h2 {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
 .routes p {
   text-align: justify;
   margin-right: 20px;
+  margin-left: 20px;
+}
+
+.video-responsive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0px;
 }
 
 .grandfooter {

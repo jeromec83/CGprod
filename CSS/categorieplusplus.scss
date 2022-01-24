@@ -302,11 +302,22 @@ a {
 .routes{
   display:flex;
   align-items: center;
-  margin : 20px;
+  margin: 20px;
+  & h2{
+    margin-right: 20px;
+    margin-left: 20px;
+  }
   & p{
   text-align: justify;
   margin-right: 20px;
+  margin-left: 20px;
   }
+}
+.video-responsive{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  margin: 20px 0px;
 }
 .grandfooter {
   margin-top: 80px;
