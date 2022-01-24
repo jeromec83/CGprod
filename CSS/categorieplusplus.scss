@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,400&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
 * {
-  font-family: "roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: black;
   max-width: 2100px;
-  margin: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 body {
   background: linear-gradient(
@@ -240,112 +241,53 @@ a {
   transition-delay: 1720ms;
 }
 
-.logo {
-  position: absolute;
-  top: 60px;
-  left: 50px;
-  display: block;
-  z-index: 11;
-  transition: all 250ms linear;
-}
-.logo img {
-  height: 26px;
-  width: auto;
-  display: block;
-}
-
-.articles {
-  display: flex;
-  align-items: center;
-  & p {
-    display: flex;
-
-    padding-right: 30px;
-  }
-}
-.routes1{
+.title{
   display:flex;
+  flex-direction: row;
   align-items: center;
+  
+  h1 {
   margin-top: 20px;
-  & img1{
-    display: flex;
-
-  }
-  & p{
-    margin-left:  10px;
-    margin-right: 10px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .content h1 {
-    margin-top: -40px;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .menu-icon:checked + label,
-  .menu-icon:not(:checked) + label {
-    right: 35px;
-  }
-  .logo {
-    left: 20px;
-  }
-  .nav {
-    right: 20px;
-  }
-  .nav ul li a {
-    font-size: 4vh;
-  }
-}
-.retour{
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-}
-
-.content{
-  display:flex;
-  align-items: center;
-  margin-left: 10px;
-  margin-bottom: 30px;
-  & img{
-    min-height: 100%;
-    width: 4%;
-  }
-  & h1 {
   color: black;
   text-align: center;
   font-variant-caps: small-caps;
   padding: 0px 30px;
   font-family: "Open Sans",sans-serif;
+  font-weight: 100;
   }
-  .soustitle{
-    font-weight: 300;
+  img{
+    min-height: 100%;
+    width: 6%;
+  }
+  img:hover{
+    transform: none;
+    box-shadow: none;
+  }
+  
+  .sous{
+    padding: 0px 30px;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 100;
+    color: rgb(0, 0, 0);
+  }
+
+  h2{
+    padding: 0px 30px;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 100;
+    color: rgb(150, 148, 148);
   }
 }
 
 .affiche {
-  & h2{
-    margin-bottom: 0px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  & img {
-    margin-bottom: 30px;
+
+  img {
+    margin: 30px 0px 30px 0px;
     max-width: 100%;
   }
-  & p {
+  p {
     text-align: justify;
     margin : 0px 20px;
-  }
-  & p{
-    margin : 0px 20px;
-    text-align: justify;
-  }
-
-  & .gras {
-    font-weight: bolder;
   }
   .video-responsive{
     display:flex;
@@ -401,6 +343,34 @@ a {
   display: flex;
   justify-content: center;
 }
+
+@media screen and (max-width: 1000px) {
+  .content h1 {
+    margin-top: -40px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .menu-icon:checked + label,
+  .menu-icon:not(:checked) + label {
+    right: 35px;
+  }
+  .logo {
+    left: 20px;
+  }
+  .nav {
+    right: 20px;
+  }
+  .nav ul li a {
+    font-size: 4vh;
+  }
+}
+
+
+
+
+
+
 
 @media screen and (max-width: 500px) {
   * {

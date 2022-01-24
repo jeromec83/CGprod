@@ -479,13 +479,13 @@ a {
           justify-content: center;
 }
 
-@media screen and (max-width: 1200px) {
-  * {
-    max-width: 1200px;
-    max-height: 100vh;
+@media screen and (max-width: 1440px) {
+  .content img {
+    margin-top: -180px;
+    margin-bottom: 40px;
   }
-  .content h1 {
-    margin-top: -40px;
+  .content h2 {
+    font-weight: 100;
   }
 }
 
