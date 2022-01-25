@@ -278,7 +278,11 @@ a {
     color: rgb(150, 148, 148);
   }
 }
-
+.abba{
+  color: rgb(150, 148, 148);
+  display: inline-block;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
 .affiche {
   img {
     margin: 30px 0px 30px 0px;
@@ -288,12 +292,8 @@ a {
     text-align: justify;
     margin : 0px 20px;
   }
-  .video-responsive{
-    display:flex;
-    justify-content: space-around;
-    margin : 40px 20px;
-  }
 }
+
 .afficheRoute img{
     text-align:center;
     margin:auto;
@@ -316,7 +316,7 @@ a {
 .video-responsive{
   display:flex;
   align-items:center;
-  justify-content: center;
+  justify-content: space-around;
   margin: 20px 0px;
 }
 .grandfooter {

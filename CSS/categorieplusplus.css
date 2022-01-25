@@ -362,6 +362,13 @@ a {
   color: #969494;
 }
 
+.abba {
+  color: #969494;
+  display: inline-block;
+  -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+          transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
 .affiche img {
   margin: 30px 0px 30px 0px;
   max-width: 100%;
@@ -370,15 +377,6 @@ a {
 .affiche p {
   text-align: justify;
   margin: 0px 20px;
-}
-
-.affiche .video-responsive {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 40px 20px;
 }
 
 .afficheRoute img {
@@ -417,9 +415,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: 20px 0px;
 }
 
