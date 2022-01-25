@@ -11,6 +11,7 @@ if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['artiste'
     $name = htmlspecialchars($_POST['name']);
     $email = htmlspecialchars($_POST['email']);
     $artiste = htmlspecialchars($_POST['artiste']);
+    $periode = htmlspecialchars($_POST['periode']);
     $message = htmlspecialchars($_POST['message']);
 
     if (filter_var($email, FILTER_VALIDATE_EMAIL)); {
@@ -29,7 +30,7 @@ if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['artiste'
                         ]
                     ],
                     'Subject' => "Demade de renseignement...",
-                    'TextPart' => "$name, $email, $artiste, $message",
+                    'TextPart' => "$name, $email, $artiste, $periode, $message",
                     'CustomID' => "AppGettingStartedTest"
                 ]
             ]

@@ -30,28 +30,30 @@
         </nav>
     </header>
     <main>
-        <div class="content">
-            <img  src="../images/LOGO.webp"  alt="logo Claude Gérard Production Toulon" class="img">
-            <h1>CLAUDE GÉRARD Production</h1>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2911.776681506518!2d5.96073715070085!3d43.13021729400646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c91bc9ec3b9b49%3A0xadba73454f2a3271!2sClaude%20G%C3%A9rard%20Production%20%7C%20SAS%20Fortissimo!5e0!3m2!1sfr!2sfr!4v1640704373861!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="title">
+            <img src="../images/LOGO_ROND_CG_PROD_2.webp" alt="logo Claude Gérard Production">
+            <a href="../index.html"><h1>Claude Gérard Production</h1></a>
+            <i class="fas fa-chevron-right"></i>
+            <h2>Contact</h2>
         </div>
-      
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2911.776681506518!2d5.96073715070085!3d43.13021729400646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c91bc9ec3b9b49%3A0xadba73454f2a3271!2sClaude%20G%C3%A9rard%20Production%20%7C%20SAS%20Fortissimo!5e0!3m2!1sfr!2sfr!4v1640704373861!5m2!1sfr!2sfr" width="1840" height="450" style="border:10;" allowfullscreen="" loading="lazy"></iframe>
         <section id="contact-form" >
             <h2>Contact</h2>
             <form id="contact" name="contact" method="post" action="../contact.php">
               <label><span>Nom</span><input name="name" type="text" placeholder="Inscrivez votre Nom"/></label>
               <label><span>Email</span><input name="email" type="email" placeholder="Inscrivez votre Email"/></label>
               <label><span>Artiste(s) souhaité(s)</span><input name="artiste" type="text"/></label>
-              <label><span>Message</span><textarea name="message" placeholder="Votre Message - Merci d'indiquer la période souhaitée pour une réponse plus précise"></textarea></label>
+              <label><span>Période(s) souhaité(s)</span><input name="periode" type="text"/></label>
+              <label><span>Message</span><textarea name="message" placeholder="Votre Message"></textarea></label>
               <input name="submit" type="submit" value="Envoyez"/>
             </form>
             
-            <aside>
+            <div class="autreContact">
               <p>Pour toutes autres demandes, n’hésitez pas à nous contacter :</p>
-              <p><i class="fas fa-phone"></i> 04 94 61 25 32</p>
-              <p><i class="fas fa-mobile-alt"></i> 06 07 15 26 06</p>
+              <a href="tel:+33494612532"><i class="fas fa-phone"></i> 04 94 61 25 32</a>
+              <a href="tel:+33607152606"><i class="fas fa-mobile-alt"></i> 06 07 15 26 06</a>
               <a href="mailto:claudegerard.prod@orange.fr"><i class="fas fa-at"></i> claudegerard.prod@orange.fr</a> 
-            </aside>
+            </div>
           </section>
 
             
