@@ -239,27 +239,6 @@ a {
   transition-delay: 1720ms;
 }
 
-
-.logo {
-	position: absolute;
-	top: 60px;
-	left: 50px;
-	display: block;
-	z-index: 11;
-	transition: all 250ms linear;
-}
-.logo img {
-	height: 26px;
-	width: auto;
-	display: block;
-
-}
-
-
-
-
-
-
 .content {
   display: flex;
   flex-direction: column;
@@ -272,12 +251,12 @@ a {
     height: auto;
     animation: animateimg 3s linear;
     margin-top: -240px;
-    margin-right: 130px;
+    margin-right: 110px;
   }
   & h1 {
     color: #000000;
     margin: 0px;
-    margin-top: -250px;
+    margin-top: -280px;
     font-family: 'Open Sans', sans-serif;
     font-variant-caps: small-caps;
     font-weight: bolder;
