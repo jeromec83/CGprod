@@ -291,7 +291,19 @@ a {
     max-height: 730px
   }
 }
-
+.afficheroute{
+  
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 30px 1px;  
+  justify-items: center; 
+  & img{
+    max-height: 730px
+  }
+}
 img:hover {
     cursor: pointer;
     transform: scale(1.02);

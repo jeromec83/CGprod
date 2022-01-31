@@ -380,8 +380,14 @@ a {
 }
 
 .afficheRoute img {
-  text-align: center;
-  margin: auto;
+  text-align: left;
+  margin: 20px, 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.afficheRoute img videoBandeau {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,18 +400,57 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 20px;
+  margin: 30px 0px;
+  background-color: #35374686;
+}
+
+.routes img {
+  -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 51%, 0% 0%);
+          clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 51%, 0% 0%);
+  margin-left: -30px;
 }
 
 .routes h2 {
   margin-right: 20px;
   margin-left: 20px;
+  color: white;
 }
 
 .routes p {
   text-align: justify;
   margin-right: 20px;
   margin-left: 20px;
+  color: white;
+}
+
+.routesa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px 0px;
+  background-color: #353746d3;
+}
+
+.routesa img {
+  -webkit-clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+          clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  margin-right: -30px;
+}
+
+.routesa h2 {
+  margin-right: 20px;
+  margin-left: 20px;
+  color: white;
+}
+
+.routesa p {
+  text-align: justify;
+  margin-right: 20px;
+  margin-left: 20px;
+  color: white;
 }
 
 .video-responsive {

@@ -276,7 +276,8 @@ a {
   align-items: center;
 }
 #contact-form h2 {
-  margin: 0;
+  
+  margin: 20px 0px;
 }
 #contact, label, input[name="submit"] {
   position: relative;
@@ -308,8 +309,9 @@ textarea {
   height: 6em;
 }
 input[type="submit"], button {
-  background: #a7cd80;
-  color: #333;
+  background: #353746;
+  color: white;
+  font-weight: bolder;
 }
 input[type="submit"]:hover, button:hover {
   background: #91b36f;
