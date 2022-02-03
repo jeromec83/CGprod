@@ -3,11 +3,11 @@
 * {
   font-family: "roboto", sans-serif;
   color: black;
-  max-width: 2100px;
+  width: 100%;
 }
 
 body {
-  background: linear-gradient(152deg, #afd9e5 0%, #c5e2e9 36%, #e0edec 100%);
+  background: linear-gradient(152deg, #afd9e5 0%, #c5e2e9 36%, #e0edec 100%) repeat-x fixed;
 }
 
 ul {
@@ -440,14 +440,7 @@ input[type="submit"]:hover, button:hover {
 }
 
 .grandfooter {
-  margin-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  margin-top: 1%;
   background-color: #91989e42;
 }
 
@@ -467,12 +460,15 @@ input[type="submit"]:hover, button:hover {
 }
 
 .grandfooter img {
-  width: 10%;
+  max-width: 10%;
 }
 
-.grandfooter img:hover {
-  -webkit-transform: none;
-          transform: none;
+.grandfooter .footer1 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 34%;
 }
 
 .grandfooter .footer1 h3 {
@@ -484,7 +480,7 @@ input[type="submit"]:hover, button:hover {
 
 .grandfooter .footer1 h2 {
   margin: 0;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: normal;
 }
 
@@ -505,17 +501,15 @@ input[type="submit"]:hover, button:hover {
 
 .grandfooter .social a {
   font-size: xx-large;
-  padding-top: 10px;
+  padding-top: 0.5%;
 }
 
 .footer-copyright {
-  font-size: 12px;
+  font-size: 0.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
 }
 
 @media screen and (max-width: 991px) {

@@ -3,13 +3,13 @@
 * {
   font-family: "Open Sans", sans-serif;
   color: black;
-  max-width: 2100px;
+  width: 100%;
   margin-left: 0px;
   margin-right: 0px;
 }
 
 body {
-  background: linear-gradient(152deg, #afd9e5 0%, #c5e2e9 36%, #e0edec 100%);
+  background: linear-gradient(152deg, #afd9e5 0%, #c5e2e9 36%, #e0edec 100%) repeat-x fixed;
 }
 
 ul {
@@ -314,9 +314,9 @@ a {
 }
 
 .title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -324,16 +324,17 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 90%;
 }
 
 .title h1 {
-  margin-top: 20px;
   color: black;
-  text-align: center;
   font-variant-caps: small-caps;
-  padding: 0px 30px;
   font-family: "Open Sans",sans-serif;
   font-weight: 100;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 
 .title img {
@@ -344,22 +345,21 @@ a {
 .title img:hover {
   -webkit-transform: none;
           transform: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.title .sous {
-  padding: 0px 30px;
-  font-family: "Open Sans",sans-serif;
-  font-weight: 100;
-  color: black;
 }
 
 .title h2 {
-  padding: 0px 30px;
   font-family: "Open Sans",sans-serif;
   font-weight: 100;
   color: #969494;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.title .sous {
+  font-family: "Open Sans",sans-serif;
+  font-weight: 100;
+  color: black;
 }
 
 .abba {
@@ -379,18 +379,26 @@ a {
   margin: 0px 20px;
 }
 
-.afficheRoute img {
-  text-align: left;
-  margin: 20px, 0;
+.bandeau {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #353746d3;
+  padding: 20px 0px;
 }
 
-.afficheRoute img videoBandeau {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.bandeau .videoBandeau {
+  margin-left: 15%;
+}
+
+.bandeau iframe {
+  margin-bottom: 20px;
+}
+
+.bandeau p {
+  color: white;
+  text-align: justify;
+  margin-right: 14%;
 }
 
 .routes {
@@ -466,14 +474,7 @@ a {
 }
 
 .grandfooter {
-  margin-top: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  margin-top: 1%;
   background-color: #91989e42;
 }
 
@@ -493,7 +494,15 @@ a {
 }
 
 .grandfooter img {
-  width: 10%;
+  max-width: 10%;
+}
+
+.grandfooter .footer1 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 34%;
 }
 
 .grandfooter .footer1 h3 {
@@ -505,7 +514,7 @@ a {
 
 .grandfooter .footer1 h2 {
   margin: 0;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: normal;
 }
 
@@ -526,17 +535,15 @@ a {
 
 .grandfooter .social a {
   font-size: xx-large;
-  padding-top: 10px;
+  padding-top: 0.5%;
 }
 
 .footer-copyright {
-  font-size: 12px;
+  font-size: 0.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
 }
 
 @media screen and (max-width: 1000px) {

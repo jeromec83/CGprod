@@ -4,15 +4,16 @@
 * {
   font-family: "roboto", sans-serif;
   color: black;
-  max-width: 2100px;
+  width: 100%;
 }
 body {
-   background: linear-gradient(
+  background: linear-gradient(
     152deg,
     rgba(175, 217, 229, 1) 0%,
     rgba(197, 226, 233, 1) 36%,
     rgba(224, 237, 236, 1) 100%
-  );
+  ) repeat-x fixed;
+  
 }
 ul {
   margin: 0;
@@ -327,23 +328,20 @@ input[type="submit"]:hover, button:hover {
     }
 }
 .grandfooter {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
+  margin-top: 1%;
   background-color: #91989e42;
-
   & .moyenfooter{
     display :flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
   }
-
   & img {
-    width: 10%;
+    max-width: 10%;
   }
-  & img:hover{
-    transform: none;
+  & .footer1{
+    flex-direction: column;
+    margin-left: 34%;
   }
   & .footer1 h3 {
     margin-bottom: 0px;
@@ -353,7 +351,7 @@ input[type="submit"]:hover, button:hover {
   }
   & .footer1 h2 {
     margin: 0;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: normal;
   }
   & .social {
@@ -366,13 +364,13 @@ input[type="submit"]:hover, button:hover {
   }
   & .social a {
     font-size: xx-large;
-    padding-top: 10px;
+    padding-top: 0.5%;
   }
 }
 .footer-copyright{
-  font-size: 12px;
+  font-size: 0.75rem;
   display: flex;
-  justify-content: center;
+  text-align: center;
 }
 @media screen and (max-width: 991px) {
 	.menu-icon:checked + label,
