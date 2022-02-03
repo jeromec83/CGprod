@@ -246,7 +246,7 @@ a {
   display:inline-flex;
   flex-direction: row;
   align-items: center;
-  width: 90%;
+  width: 70%;
   h1 {
   color: black;
   font-variant-caps: small-caps;
@@ -280,22 +280,37 @@ a {
 }
 .affiche {
   img {
-    margin: 30px 0px 30px 0px;
+    margin: 1.87rem 0rem 1.87rem 0rem;
     max-width: 100%;
   }
   p {
+    align-items: center;
     text-align: justify;
-    margin : 0px 20px;
+    margin : 0rem 0rem 0rem 1.87rem;
   }
+  & iframe{
+    width: 35rem;
+    margin-bottom: 20px;
+  }
+}
+.video-responsive{
+  display:flex;
+  align-items:center;
+  justify-content: space-around;
+  margin: 20px 0px;
 }
 
 .bandeau{
   display: flex;
-  background-color: #353746d3;
-  padding : 20px 0px;
+  padding : 1.25rem 0rem;
+  .img1{
+    max-width: 30%;
+  }
   & .videoBandeau{
-    margin-left: 15%;
-    
+    padding: 1.25rem ;
+    margin-left: 20%;
+    width: 35rem;
+    background-color:#353746d3 ;
   }
   & iframe{
     margin-bottom: 20px;
@@ -307,55 +322,54 @@ a {
 
   }
 }
+
 .routes{
   display:flex;
   align-items: center;
-  margin: 30px 0px;
+  margin: 1.875rem 0rem;
   background-color:#35374686;
   
-  & img{
+  & .img2{
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 51%, 0% 0%);
-    margin-left :-30px;
+    margin-left :-1.875rem;
+    width: 40%;
   }
   & h2{
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-left: 1.25rem;
     color: white;
   }
   & p{
+  width: 96%;
   text-align: justify;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 1.25rem;
+  margin-left: 1.25rem;
   color: white;
   }
 }
 .routesa{
   display:flex;
   align-items: center;
-  margin: 30px 0px;
+  margin: 1.875rem 0rem;
   background-color:#353746d3;
   & img{
     clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
-    margin-right: -30px;
+    margin-right: -1.875rem;
+    width: 40%;
   }
   & h2{
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 1.25rem;
+    margin-left: 1.25rem;
     color: white ;
   }
   & p{
+  width: 97%;
   text-align: justify;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 25rem;
+  margin-left: 1.25rem;
   color: white;
   }
 }
-.video-responsive{
-  display:flex;
-  align-items:center;
-  justify-content: space-around;
-  margin: 20px 0px;
-}
+
 .grandfooter {
   margin-top: 1%;
   background-color: #91989e42;
