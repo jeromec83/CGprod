@@ -243,14 +243,20 @@ a {
 
 .title{
   display:inline-flex;
-  flex-direction: row;
   align-items: center;
+  width: 100%;
   h1 {
   color: black;
   font-variant-caps: small-caps;
   font-family: "Open Sans",sans-serif;
   font-weight: 100;
-  justify-content: right;
+  text-align: center;
+  width:23rem;
+  font-size: 2rem;
+
+  }
+  a{
+    width: 28%;
   }
   img{
     min-height: 100%;
@@ -259,11 +265,16 @@ a {
   img:hover{
     transform: none;
   }
+  .fas{
+    width:1rem;
+  }
   h2{
+    width: 18.75rem;
     font-family: "Open Sans",sans-serif;
     font-weight: 100;
     color: rgb(150, 148, 148);
-    justify-content: right;
+    text-align: center;
+    font-size: 1.563rem;
   }
 }
 

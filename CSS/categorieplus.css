@@ -315,14 +315,10 @@ a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 90%;
+  width: 100%;
 }
 
 .title h1 {
@@ -330,9 +326,13 @@ a {
   font-variant-caps: small-caps;
   font-family: "Open Sans",sans-serif;
   font-weight: 100;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  text-align: center;
+  width: 23rem;
+  font-size: 2rem;
+}
+
+.title a {
+  width: 28%;
 }
 
 .title img {
@@ -345,19 +345,23 @@ a {
           transform: none;
 }
 
+.title .fas {
+  width: 1rem;
+}
+
 .title h2 {
+  width: 18.75rem;
   font-family: "Open Sans",sans-serif;
   font-weight: 100;
   color: #969494;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  text-align: center;
 }
 
 .title .sous {
   font-family: "Open Sans",sans-serif;
   font-weight: 100;
   color: black;
+  text-align: center;
 }
 
 .affiche {
