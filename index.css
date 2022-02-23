@@ -360,6 +360,7 @@ a {
   text-align: center;
   font-weight: normal;
   margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 @-webkit-keyframes animateimg {
@@ -393,8 +394,8 @@ a {
 }
 
 .grandfooter {
-  margin-top: 1%;
-  background-color: #91989e42;
+  margin-top: 20px;
+  border-top: 1px solid black;
 }
 
 .grandfooter .moyenfooter {
@@ -405,6 +406,8 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -413,31 +416,38 @@ a {
 }
 
 .grandfooter img {
-  max-width: 10%;
-}
-
-.grandfooter .footer1 {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-left: 34%;
+  width: 20%;
 }
 
 .grandfooter .footer1 h3 {
   margin-bottom: 0px;
   text-transform: uppercase;
-  font-size: large;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .grandfooter .footer1 h2 {
   margin: 0;
-  font-size: 1rem;
+  font-size: 12px;
   font-weight: normal;
 }
 
 .grandfooter .social {
+  width: 10%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.grandfooter .social h3 {
+  font-size: 1px;
+}
+
+.grandfooter .social a {
+  font-size: large;
+}
+
+.grandfooter .footer2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -445,16 +455,13 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
-.grandfooter .social h3 {
-  margin-bottom: 0px;
-}
-
-.grandfooter .social a {
-  font-size: xx-large;
-  padding-top: 0.5%;
+.grandfooter .footer2 a {
+  font-size: 12px;
 }
 
 .footer-copyright {
@@ -465,19 +472,124 @@ a {
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
+  
+  .menu-icon:checked + label,
+  .menu-icon:not(:checked) + label{
+    right: 35px;
+  }
+  .nav{
+    right: 20px;
+  }
+  .nav ul li a{
+    font-size: 4vh;
+  }
+}*/
+@media screen and (max-width: 390px) {
+  * {
+    max-width: 390px;
+    width: 100%;
+  }
+  body {
+    margin: 0;
+    width: 100%;
+  }
   .menu-icon:checked + label,
   .menu-icon:not(:checked) + label {
     right: 35px;
-  }
-  .logo {
-    left: 20px;
   }
   .nav {
     right: 20px;
   }
   .nav ul li a {
     font-size: 4vh;
+  }
+  .content {
+    width: 100%;
+  }
+  .content img {
+    width: 90%;
+    margin-top: 10%;
+    margin-left: 5%;
+  }
+  .content h1 {
+    margin-top: 0%;
+  }
+  .content h2 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.56rem;
+  }
+  .content h3 {
+    font-size: 1rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .grandfooter {
+    margin-top: 1%;
+    border-top: 1px solid black;
+    background-color: #91989e42;
+    width: 100%;
+  }
+  .grandfooter .moyenfooter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .grandfooter img {
+    max-width: 30%;
+  }
+  .grandfooter .footer1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0%;
+    text-align: center;
+  }
+  .grandfooter .footer1 h3 {
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: 500;
+  }
+  .grandfooter .footer1 h2 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  .grandfooter .social {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .grandfooter .social h3 {
+    font-size: 1rem;
+    margin-bottom: 0px;
+  }
+  .grandfooter .social a {
+    font-size: x-large;
+    padding-top: 0%;
   }
 }
 /*# sourceMappingURL=index.css.map */
