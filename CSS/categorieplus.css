@@ -500,9 +500,6 @@ img:hover {
 }
 
 @media screen and (max-width: 1440px) {
-  * {
-    max-height: 100%;
-  }
   .content img {
     height: 60px;
   }
@@ -533,7 +530,6 @@ img:hover {
 @media screen and (max-width: 500px) {
   * {
     max-width: 500px;
-    max-height: 100vh;
   }
   body {
     height: 900px;
@@ -674,6 +670,22 @@ img:hover {
   }
   .affiche {
     margin-top: 1.5rem;
+  }
+  .afficheplus {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 0.5%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    gap: 0.5rem 0.063rem;
+    justify-items: center;
+  }
+  .afficheplus img {
+    width: 90%;
   }
   footer {
     width: 100%;

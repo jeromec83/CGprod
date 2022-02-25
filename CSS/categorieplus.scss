@@ -379,9 +379,7 @@ img:hover {
 }
 
 @media screen and (max-width: 1440px) {
-  *{
-    max-height: 100%;
-  }
+ 
   .content img{
     height: 60px;
   }
@@ -411,7 +409,7 @@ img:hover {
 @media screen and (max-width: 500px) {
     * {
       max-width: 500px;
-      max-height: 100vh;
+      
     }
     body {
       height: 900px;
@@ -492,9 +490,11 @@ img:hover {
       max-width: 390px;
       width: 100%;
     }
+
     body{
     margin: 0;
     width: 100%;
+
     }
     .menu-icon:checked + label,
     .menu-icon:not(:checked) + label{
@@ -506,7 +506,7 @@ img:hover {
     .nav ul li a{
       font-size: 4vh;
     }
-  
+ 
     .title{
       display:flex;
       flex-direction: column;
@@ -537,10 +537,26 @@ img:hover {
   margin-top: 1.5rem;
 }
 
-
+  .afficheplus{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 0.5%;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr; 
+    gap: 0.5rem 0.063rem;  
+    justify-items: center; 
+    & img{
+      width: 90%;
+    }
+    
+  }
+  
   footer{
     width: 100%;
+    
   }
+
   .grandfooter {
     background-color: #91989e42;
     max-width: 100%;
